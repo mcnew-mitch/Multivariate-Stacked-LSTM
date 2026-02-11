@@ -1,1 +1,10 @@
-# Multivariate-Stacked-LSTM
+Developed a Multivariate Stacked LSTM neural network to forecast daily returns for high-volatility assets (NVDA),
+achieving a 1.65% Mean Absolute Error (MAE) on out-of-sample test data.
+Engineered a normalized 9-dimensional feature space by fusing the Fama-French 5-Factor Model with alternative
+sentiment data as well as ticker volume data to capture both fundamental valuation and market psychology.
+Constructed a hybrid sentiment signal by aggregating 20,000+ financial headlines from three disparate sources
+(Market-wide, Ticker-specific, and Macro-Event data) using VADER lexicon analysis.
+Applied Natural Language Processing (NLP) techniques to quantify market sentiment, mapping raw text headlines
+to normalized compound polarity scores (-1 to +1) for neural network ingestion.
+Optimized model hyperparameters using Early Stopping and Time-Series Cross-Validation, preventing overfitting
+on noise while maintaining sensitivity to recent market regime shifts (2025–2026).
